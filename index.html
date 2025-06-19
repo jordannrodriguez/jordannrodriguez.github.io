@@ -26,6 +26,23 @@
 			available. 
 		-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+						  /* Quick styling so the box matches your theme */
+						  .signup-box {
+						    border: 1px solid #ccc;         /* subtle outline */
+						    padding: 1.2rem;
+						    margin-top: 2rem;
+						    border-radius: 6px;
+						    background: rgba(255,255,255,0.05);
+						  }
+						  .signup-box input,
+						  .signup-box button {
+						    width: 100%;
+						    padding: 0.6rem;
+						    margin-top: 0.4rem;
+						  }
+		</style>
 	</head>
 	<!-- The body is the location where your site's content will go -->
 	<body class="is-preload">
@@ -135,9 +152,28 @@
 								-->
 								<b>Project I Title</b><br>Project description, including further links to posters, talks, publications.
 							</p>
-							<p>
-								<b>Project II Title</b><br>Project description, including further links to posters, talks, publications.
-							</p>
+					          <!-- ✨ Newsletter / sign-up box  ✨ -->
+						        <section class="signup-box">
+						           <h3>Stay in the loop</h3>
+						           <p>Get occasional updates on new projects & publications.</p>
+						
+						    <!-- Replace the action URL with the one your form service gives you -->
+						           <form action="https://usebasin.com/f/163d8c332228" method="POST">
+						               <label>
+							           Name<br>
+							           <input type="text" name="name" required>
+						               </label><br>
+						               <label>
+							           Email<br>
+							           <input type="email" name="email" required>
+						               </label>
+						      <!-- optional: a hidden field to tag where the sign-up came from -->
+						               <input type="hidden" name="form-source" value="research-section">
+						               <button type="submit">Subscribe</button>
+						        </form>
+						    </section>
+						</article>
+							
 						</article>
 
 						<!-- Here is the "Community" card. -->
